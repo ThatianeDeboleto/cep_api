@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Thatiane Deboleto">
+  <meta name="description" content="Busca CEP - localizar endereços">
+  <meta name="keywords" content="busca cep, busca, cep, localizar, endereço">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Busca CEP</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="title">Busca CEP</h1>
+    <form>
+      <div class="infoCep">
+        <div class="search-container">
+          <div class="input-container">
+            <label for="cep">Digite o CEP</label>
+            <input type="text" id="cep" autofocus placeholder="Digite o CEP" />
+          </div>
+          <button id="search">Buscar</button>
+        </div>
+        <div class="input-container">
+          <label for="logradouro">Rua </label>
+          <input type="text" id="logradouro" readonly />
+        </div>
+        <div class="input-container">
+          <label for="bairro">Bairro </label>
+          <input type="text" id="bairro" readonly />
+        </div>
+        <div class="input-container">
+          <label for="localidade">Cidade </label>
+          <input type="text" id="localidade" readonly />
+        </div>
+        <div class="input-container">
+          <label for="uf">Estado </label>
+          <input type="text" id="uf" readonly />
+        </div>
+      </div>
+      <p class="warningMessage">Messagem aqui</p>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
